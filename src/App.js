@@ -4,6 +4,7 @@ import Row from "./Row";
 import Banner from "./Banner";
 import requests from "./requests";
 import Nav from "./Nav";
+import Footer from "./Footer";
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
       <Row title="Horror movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance movies" fetchUrl={requests.fetchRomanceMovies} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+      <Footer />
     </div>
   );
 }
